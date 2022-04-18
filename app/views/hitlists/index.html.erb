@@ -1,0 +1,27 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Hit List</h1>
+<h2>Shut the Fuck Up</h2>
+
+
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Primer Nombre</th>
+      <th>Primer Apellido</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>Twitter</th>
+      <th colspan=3></th>
+    </tr>
+  </thead>
+</table>
+
+<tbody id="hitlists" class="table">
+  <% @hitlists.each do |hitlist| %>
+    <%= render hitlist %>
+  <% end %>
+</tbody>
+
+<%= link_to "New hitlist", new_hitlist_path %>

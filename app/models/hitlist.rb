@@ -1,0 +1,2 @@
+class Hitlist < ApplicationRecord
+end

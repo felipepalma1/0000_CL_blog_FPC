@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @hitlist %>
+
+<div>
+  <%= link_to "Edit this hitlist", edit_hitlist_path(@hitlist) %> |
+  <%= link_to "Back to hitlists", hitlists_path %>
+
+  <%= button_to "Destroy this hitlist", @hitlist, method: :delete %>
+</div>
